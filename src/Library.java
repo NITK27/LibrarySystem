@@ -5,7 +5,7 @@ import java.util.* ;
     
     public ArrayList<Reader> Readers = new ArrayList<Reader>(); 
     public ArrayList<Book> AvailableBooks = new ArrayList<Book>();
-   
+   //ninoe
     public Scanner vce = new Scanner(System.in);
       
     public Library(){
