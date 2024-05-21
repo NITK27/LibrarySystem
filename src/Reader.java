@@ -25,9 +25,9 @@ public class Reader{
 
     }
 
-    public boolean ValidateReader(){
+    public int ValidateReader(){
        
-            return false;
+            return 1;
         
     }
     

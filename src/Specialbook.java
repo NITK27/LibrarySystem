@@ -6,7 +6,7 @@ public class Specialbook extends Book {
     }
 
     public boolean ValidateBorrow(Reader reader) {
-        if (reader.ValidateReader()== true) {
+        if (reader.ValidateReader()== 2) {
             return true;
             
         }

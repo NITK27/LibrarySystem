@@ -57,7 +57,7 @@ import java.util.* ;
         AvailableBooks.add(new Book("LOTR ", "LOTR1", 1));
         AvailableBooks.add(new Book("Percy Jackson ", "PJ1", 2));
         AvailableBooks.add(new Specialbook("Atomic Habits", "AH1", 2));
-        
+        AvailableBooks.add(new Comic("Batman", "B1", 2));
     }
 
     public  void LoadReaders(){
@@ -67,6 +67,7 @@ import java.util.* ;
         Readers.add(new Reader(27,"krish","k"));
         Readers.add(new VIP(18991,"Dad","d"));
         Readers.add(new Reader(4,"Mom","m"));
+        Readers.add(new Child(7, "Tejas", "t" ));
 
         
     }

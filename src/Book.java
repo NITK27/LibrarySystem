@@ -12,8 +12,13 @@ public class Book {
    
 
    public boolean ValidateBorrow(Reader reader){
-    return true;
+
+    if(reader.ValidateReader()== 3){
+        System.out.println("this is a child account, parent account authentication is required");
+        return false;
     }
+    else{return true;}
+}
 }
 
 

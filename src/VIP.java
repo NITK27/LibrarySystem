@@ -4,9 +4,9 @@ public class VIP extends Reader{
         super(Id, ReaderName, Password);
     }
     
-    public boolean ValidateReader(){
+    public int ValidateReader(){
         
-        return true;
+        return 2;
 
     }
     
