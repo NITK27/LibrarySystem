@@ -25,7 +25,11 @@ public class Reader{
 
     }
 
-    public boolean is_VIP = false;
+    public boolean ValidateReader(){
+       
+            return false;
+        
+    }
     
 
 

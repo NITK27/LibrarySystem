@@ -5,10 +5,14 @@ public class Specialbook extends Book {
         
     }
 
-    public void ValidateBorrow(Reader reader) {
-        if (!(reader instanceof VIP)) {
-            System.out.println("YOU ARE NOT A VIP, HENCE YOU CAN'T BORROW THIS BOOK");
-            throw new IllegalStateException("Non-VIP user attempted to borrow a special book.");
+    public boolean ValidateBorrow(Reader reader) {
+        if (reader.ValidateReader()== true) {
+            return true;
+            
+        }
+        else {
+            System.out.println("you are not a VIP customer, hence you can't borrow this book");
+            return false;
         }
     }
         

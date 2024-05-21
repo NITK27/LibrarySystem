@@ -11,8 +11,8 @@ public class Book {
 
    
 
-   public void ValidateBorrow(Reader reader){
-    
+   public boolean ValidateBorrow(Reader reader){
+    return true;
     }
 }
 

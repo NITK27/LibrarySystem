@@ -57,6 +57,7 @@ import java.util.* ;
         AvailableBooks.add(new Book("LOTR ", "LOTR1", 1));
         AvailableBooks.add(new Book("Percy Jackson ", "PJ1", 2));
         AvailableBooks.add(new Specialbook("Atomic Habits", "AH1", 2));
+        
     }
 
     public  void LoadReaders(){
@@ -66,17 +67,13 @@ import java.util.* ;
         Readers.add(new Reader(27,"krish","k"));
         Readers.add(new VIP(18991,"Dad","d"));
         Readers.add(new Reader(4,"Mom","m"));
+
         
     }
 
 
     public  void borrowBook(Reader reader , Book book){
 
-        try {
-            book.ValidateBorrow(reader); 
-        } catch (IllegalStateException e) {
-            return; 
-        }
         
         if (book.quantity==0) {
             System.out.println("book is not available"); 
@@ -125,7 +122,12 @@ import java.util.* ;
      String choice = vce.next().toLowerCase();
 
      if(choice.equals("b") ){
-        
+        boolean y = objBook.ValidateBorrow(reader);
+
+        if (y == false) {
+            return;
+        }
+
            borrowBook(reader,objBook);}
      else {
          if (reader.BorrowedBooks.contains(objBook)) {
