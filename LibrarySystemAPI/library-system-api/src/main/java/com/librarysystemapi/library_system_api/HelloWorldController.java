@@ -1,6 +1,8 @@
 package com.librarysystemapi.library_system_api;
 import com.librarysystempackage.*;
 import java.util.*;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 public class HelloWorldController {
     Library objLibrary = new Library();
@@ -20,7 +23,7 @@ public class HelloWorldController {
 
     }
     
-
+ 
     @GetMapping("/AvailableBooks")
     public ArrayList <String> getAvailableBooks() {
         
